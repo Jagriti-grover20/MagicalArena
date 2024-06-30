@@ -1,4 +1,4 @@
-package Util;
+package com.magical_arena.Util;
 
 import java.util.Random;
 
@@ -6,8 +6,8 @@ public class Dice {
     private Random random;
 
     // Constructor to initialize a dice roller
-    public Dice() {
-        this.random = new Random();
+    public Dice(Random random) {
+        this.random = random;
     }
 
     // Method to roll a standard 6-sided die and return the result
