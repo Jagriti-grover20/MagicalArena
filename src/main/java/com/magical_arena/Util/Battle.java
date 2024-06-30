@@ -15,8 +15,9 @@ public class Battle {
 
     // Constructor to initialize a battle between two players
     public Battle(Player player1, Player player2){
-        new Battle(player1, player2, new Random());
+        this(player1, player2, new Random());
     }
+
     public Battle(Player player1, Player player2, Random random) {
         // Determine which player starts as attacker based on higher health
         if (player1.getHealth() < player2.getHealth()) {
